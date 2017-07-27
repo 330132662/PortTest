@@ -23,6 +23,7 @@ public class LeftActivity extends SerialPortActivity {
             e.printStackTrace();
         }
         finish();
+//        System.exit(0);
     }
 
     @Override
