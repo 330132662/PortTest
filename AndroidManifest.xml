@@ -29,7 +29,8 @@
             android:exported="true" />
         <activity
             android:name=".RightActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
+        <activity android:name=".Test0729Activity"></activity>
     </application>
 
 </manifest>

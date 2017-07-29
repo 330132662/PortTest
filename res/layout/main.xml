@@ -10,43 +10,43 @@
     <Button
         android:id="@+id/ButtonSetup"
         android:layout_width="fill_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text="Setup" />
+        android:layout_height="wrap_content"
+        android:text="配置端口" />
 
     <Button
         android:id="@+id/ButtonConsole"
         android:layout_width="fill_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text="Console" />
+        android:layout_height="wrap_content"
+        android:text="控制台" />
+
+    <Button
+        android:id="@+id/test1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="王建专用" />
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:onClick="right"
-        android:text="right" />
+        android:text="右转" />
 
     <Button
         android:id="@+id/Button01010101"
         android:layout_width="fill_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text="Send 01010101" />
+        android:layout_height="wrap_content"
+        android:text="自发自收" />
 
     <Button
         android:id="@+id/ButtonAbout"
         android:layout_width="fill_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text="About" />
+        android:layout_height="wrap_content"
+        android:text="关于" />
 
     <Button
         android:id="@+id/ButtonQuit"
         android:layout_width="fill_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text="Quit" />
+        android:layout_height="wrap_content"
+        android:text="退出" />
 
 </LinearLayout>

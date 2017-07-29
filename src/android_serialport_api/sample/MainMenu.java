@@ -16,14 +16,15 @@
 
 package android_serialport_api.sample;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainMenu extends Activity {
+import android_serialport_api.base.BaseActivity;
+
+public class MainMenu extends BaseActivity implements View.OnClickListener {
 
     /**
      * Called when the activity is first created.
@@ -77,6 +78,7 @@ public class MainMenu extends Activity {
                 MainMenu.this.finish();
             }
         });
+        findViewById(R.id.test1).setOnClickListener(this);
     }
 
 
@@ -84,4 +86,12 @@ public class MainMenu extends Activity {
         startActivity(new Intent(MainMenu.this, RightActivity.class));
     }
 
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.test1:
+                loadActivity(Test0729Activity.class, null);
+                break;
+        }
+    }
 }
