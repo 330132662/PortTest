@@ -1,8 +1,11 @@
-package android_serialport_api.sample;
+package android_serialport_api.function;
 
 import android.os.Bundle;
 
 import java.io.IOException;
+
+import android_serialport_api.sample.R;
+import android_serialport_api.sample.SerialPortActivity;
 
 public class RightActivity extends SerialPortActivity {
 

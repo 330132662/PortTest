@@ -26,12 +26,14 @@
         <activity android:name=".LoopbackActivity" />
         <activity android:name=".Sending01010101Activity" />
         <activity
-            android:name=".LeftActivity"
+            android:name="android_serialport_api.function.LeftActivity"
             android:exported="true" />
         <activity
-            android:name=".RightActivity"
+            android:name="android_serialport_api.function.RightActivity"
             android:exported="true" />
-        <activity android:name=".Test0729Activity"></activity>
+        <activity android:name=".Test0729Activity" />
+        <activity android:name="android_serialport_api.function.OpenLedActivity" />
+        <activity android:name="android_serialport_api.function.CloseLedActivity"></activity>
     </application>
 
 </manifest>

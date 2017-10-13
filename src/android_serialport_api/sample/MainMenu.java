@@ -23,6 +23,7 @@ import android.view.View;
 import android.widget.Button;
 
 import android_serialport_api.base.BaseActivity;
+import android_serialport_api.function.RightActivity;
 
 public class MainMenu extends BaseActivity implements View.OnClickListener {
 

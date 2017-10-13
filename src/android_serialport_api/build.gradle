@@ -22,9 +22,9 @@ android {
     dexOptions {
         incremental true
     }
-    sourceSets{
+    sourceSets {
         main {
-  jniLibs.srcDirs = ["jniLibs"] ;
+            jniLibs.srcDirs = ["jniLibs"];
         }
     }
 }

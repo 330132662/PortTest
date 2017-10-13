@@ -34,8 +34,7 @@ public class ConsoleActivity extends SerialPortActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.console);
-
-//		setTitle("Loopback test");
+//		setTitle("Loopback test"
         Button sub_msg = (Button) findViewById(R.id.sub_msg);
         mReception = (EditText) findViewById(R.id.EditTextReception);
         mReception.setHint(getClass().toString());
@@ -61,12 +60,13 @@ public class ConsoleActivity extends SerialPortActivity {
 
     @Override
     protected void onDataReceived(final byte[] buffer, final int size) {
-        runOnUiThread(new Runnable() {
+       /* runOnUiThread(new Runnable() {
             public void run() {
                 if (mReception != null) {
                     mReception.append(new String(buffer, 0, size));
+                    Log.d("port", mReception.toString());
                 }
             }
-        });
+        });*/
     }
 }
