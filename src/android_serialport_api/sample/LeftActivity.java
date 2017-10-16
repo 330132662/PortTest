@@ -1,11 +1,8 @@
-package android_serialport_api.function;
+package android_serialport_api.sample;
 
 import android.os.Bundle;
 
 import java.io.IOException;
-
-import android_serialport_api.sample.R;
-import android_serialport_api.sample.SerialPortActivity;
 
 public class LeftActivity extends SerialPortActivity {
 
