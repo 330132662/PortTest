@@ -1,6 +1,7 @@
 package android_serialport_api.sample;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 import java.io.IOException;
 
@@ -17,7 +18,8 @@ public class LeftActivity extends SerialPortActivity {
             text[i] = t.charAt(i);
         }*/
         try {
-            mOutputStream.write(new String("z").getBytes());
+            Toast.makeText(mApplication, "ssss", Toast.LENGTH_SHORT).show();
+            mOutputStream.write(new String("Z").getBytes());
             mOutputStream.write('\n');
         } catch (IOException e) {
             e.printStackTrace();

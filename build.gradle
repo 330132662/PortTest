@@ -2,9 +2,13 @@ apply plugin: 'com.android.application'
 buildscript {
     repositories {
         mavenCentral()
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.1'
+        classpath 'com.android.tools.build:gradle:3.0.0'
     }
 }
 
@@ -17,7 +21,7 @@ dependencies {
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "26.0.0"
+    buildToolsVersion '26.0.2'
     defaultConfig {
 //        applicationId "android_serialport_api.sample"
         minSdkVersion 15
@@ -49,4 +53,5 @@ android {
         debug.setRoot('build-types/debug')
         release.setRoot('build-types/release')
     }
+
 }

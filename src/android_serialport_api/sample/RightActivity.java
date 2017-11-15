@@ -11,7 +11,7 @@ public class RightActivity extends SerialPortActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_right);
         try {
-            mOutputStream.write(new String("y").getBytes());
+            mOutputStream.write(new String("Y").getBytes());
             mOutputStream.write('\n');
         } catch (IOException e) {
             e.printStackTrace();
